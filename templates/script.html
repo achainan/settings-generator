@@ -183,26 +183,6 @@ function swiftRow(title) {
   return row
 }
 
-function download() {
-  filename = "SettingsViewController.swift"
-  text = swiftCode()
-  var element = document.createElement('a');
-  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-  element.setAttribute('download', filename);
-  element.style.display = 'none';
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-}
-
-function downloadBase() {
-  var anchor = document.createElement('a');
-  anchor.href = 'static/BaseSettingsViewController.swift';
-  anchor.target = '_blank';
-  anchor.download = 'BaseSettingsViewController.swift';
-  anchor.click();
-}
-
 function swiftCode() {
   newLine = `\n`
   tab = "  "
