@@ -1,0 +1,19 @@
+<table id="myTable" class="myTable section-container">
+  
+  <thead>
+    <form action="#">
+    <td><b>Section {{index}}</b></td>
+    <td><a href="#" onclick="deleteSection(\"{{index}})\"" class="btn btn-danger">Delete Section</a></td>
+    </form>
+  </thead>
+
+  <tbody></tbody>
+  
+  <tfoot>
+    <form action="#">
+    <td><div class="form-group"><input type="text" class="form-control row-title" id="section-title" placeholder="Title"></div></td>
+    <td><button onclick="insertRow({{index}})" class="btn btn-primary">Insert Cell</button></td>
+    </form>
+  </tfoot>
+  
+</table>
