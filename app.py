@@ -1,4 +1,7 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
+import sentry_sdk
+
+sentry_sdk.init("https://0457ea040434493aa1c8476837decf64@sentry.io/1444073")
 
 app = Flask(__name__)
 
